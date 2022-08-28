@@ -28,14 +28,23 @@
 }
 
 .list-item {
-    padding-bottom: 15px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
     width: auto;
     text-align: center;
 }
 
+.list-item a {
+    font-size: 22px;
+}
+
+.list-item:hover {
+    background-color: rgb(72, 72, 72);
+}
+
 .anchor {
     color: white;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     text-decoration: none;
 }
 
@@ -60,10 +69,12 @@
 }
 
 #header h1{
+    width: 330px;
     margin: 0;
     padding-top: 10px;
     padding-left: 10px;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
+    text-justify: inter-word;
 }
 
 .horizontal {
@@ -76,7 +87,7 @@
 .horizontal li {
     float: left;
     padding: 10px;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
 }
 
 .abbr {
@@ -93,11 +104,16 @@
     text-decoration: none;
     text-align: center;
     padding: 15px;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
 
-abbr:hover {
-    background-color: coral;
+.abbr abbr:hover {
+    background-color: rgb(72, 72, 72);
+}
+
+.abbr a {
+    text-decoration: none;
 }
 
 p {
