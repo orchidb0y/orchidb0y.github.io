@@ -44,12 +44,58 @@
 }
 
 #main-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
     height: 100%;
-    margin-left: 192px;
-    padding-left: 8px;
+    margin-left: 200px;
+    background: rgb(255, 248, 222);
+}
+
+#header {
+    background-color: rgb(78, 78, 78);
+}
+
+#header h1{
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: Montserrat;
 }
 
 .horizontal {
     list-style-type: none;
+    margin: 0;
     padding: 0;
+    overflow: hidden;;
+}
+
+.horizontal li {
+    float: left;
+    padding: 10px;
+    font-family: Montserrat;
+}
+
+.abbr {
+    background-color: rgb(56, 56, 56);
+}
+
+.abbr li {
+    float: left;
+}
+
+.abbr li abbr {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    font-family: Montserrat;
+}
+
+abbr:hover {
+    background-color: coral;
 }
