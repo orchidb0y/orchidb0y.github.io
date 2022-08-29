@@ -81,6 +81,10 @@
     text-justify: inter-word;
 }
 
+#header header {
+    color: rgb(183, 183, 183);
+}
+
 .horizontal {
     list-style-type: none;
     margin: 0;
@@ -120,8 +124,12 @@
     text-decoration: none;
 }
 
-p {
-    position: fixed;
-    top: 50%;
-    left: 50%;
+#page-content {
+    height: 100%;
+}
+
+#page-content p {
+    position: relative;
+    margin: 0;
+
 }
