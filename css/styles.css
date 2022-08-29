@@ -72,13 +72,17 @@
     background-color: rgb(78, 78, 78);
 }
 
-#header h1{
+#header h1 {
     width: 330px;
     margin: 0;
     padding-top: 10px;
     padding-left: 10px;
     font-family: Montserrat, sans-serif;
     text-justify: inter-word;
+}
+
+#contact-me {
+    padding-bottom: 10px;
 }
 
 #header header {
@@ -125,11 +129,11 @@
 }
 
 #page-content {
-    height: 100%;
+    width: auto;
 }
 
 #page-content p {
+    display: inline-block;
     position: relative;
     margin: 0;
-
 }
