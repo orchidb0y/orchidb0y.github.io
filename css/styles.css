@@ -150,7 +150,11 @@
 }
 
 .contact-content {
-    margin-left: 5px
+    margin: 5px
+}
+
+.contact-submit{
+    margin: 5px;
 }
 
 #page-content {
@@ -173,4 +177,5 @@
 #contact-me input:focus {
     background-color: rgb(217, 217, 217);
 }
+
 
