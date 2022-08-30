@@ -59,7 +59,7 @@
             </section>
 
             <section id="contact-form">
-                <form action="" method="post" id="contact-me">
+                <form action="https://api.web3forms.com/submit" method="post" id="contact-me">
                     <div class="contact-name">
                         <label for="contact_name">Name:</label>
                         <input type="text" id="contact_name" name="contact_name" required>
@@ -73,6 +73,8 @@
                     </div>
                     <div class="contact-submit">
                         <button type="submit">Send</button>
+                        <input type="hidden" name="access_key" value="91563167-38f7-4282-b08b-4b338118288b">
+                        <input type="hidden" name="redirect" value="/pages/contact.html">
                     </div>
                 </form>
             </section>
