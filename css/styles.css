@@ -103,6 +103,17 @@
     font-family: Montserrat, sans-serif;
 }
 
+.contact-me-info a {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 2px;
+    color: rgb(255, 255, 255);
+}
+
+.contact-me-info a:hover {
+    color:rgb(183, 183, 183);
+}
+
 .horizontal li {
     float: left;
     padding: 10px;
