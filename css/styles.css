@@ -120,6 +120,10 @@
     font-family: Montserrat, sans-serif;
 }
 
+.horizontal li:hover {
+    color: white;
+}
+
 .abbr {
     background-color: rgb(56, 56, 56);
     height: 70px;
