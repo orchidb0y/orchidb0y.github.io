@@ -46,38 +46,47 @@
         <div id="main-content">
 
             <section id="header">
+
                 <header>
                     <h1 class="intro-header contact-me-header">Contact me</h1>
                     <p class="contact-me-info">Use the form, check out my links below, or my <a href="https://www.dropbox.com/s/5ebg8ims4399g07/CV%20David%20Sobral%20ENG.pdf?dl=0">resume</a>.</p>
                 </header>
+
                 <ul class="horizontal abbr">
                     <li><a href="https://github.com/orchidb0y/" target="_blank"><abbr title="GitHub">GH</abbr></a></li>
                     <li><a href="https://instagram.com/orchidb0y" target="_blank"><abbr title="Instagram">IG</abbr></a></li>
                     <li><a href="https://www.linkedin.com/in/dcsobral/" target="_blank"><abbr title="LinkedIn">LI</abbr></a></li>
                     <li><a href="https://dev.to/orchidb0y" target="_blank"><abbr title="Dev">DV</abbr></a></li>
                 </ul>
+
             </section>
 
-            <section id="contact-form">
-                <form action="https://api.web3forms.com/submit" method="post" id="contact-me">
-                    <div class="contact-name">
-                        <label for="contact_name">Name:</label>
-                        <input type="text" id="contact_name" name="contact_name" required>
-                    </div>
-                    <div class="contact-email">
-                        <label for="contact_email">Email:</label>
-                        <input type="email" name="contact_email" id="contact_email" required>
-                    </div>
-                    <div class="contact-content">
-                        <textarea name="contact_content" id="contact_content" cols="27" rows="11" required></textarea>
-                    </div>
-                    <div class="contact-submit">
-                        <button type="submit">Send</button>
-                        <input type="hidden" name="access_key" value="91563167-38f7-4282-b08b-4b338118288b">
-                        <input type="hidden" name="redirect" value="https://orchidb0y.github.io/personal-website/pages/thanks.html">
-                        <input type="hidden" name="subject" value=`${contact_name} has sent you a message from your personal website`>
-                    </div>
-                </form>
+            <section class="page-content contact">
+
+                <section id="contact-form">
+
+                    <form action="https://api.web3forms.com/submit" method="post" id="contact-me">
+                        <div class="contact-name">
+                            <label for="contact_name">Name:</label>
+                            <input type="text" id="contact_name" name="contact_name" required>
+                        </div>
+                        <div class="contact-email">
+                            <label for="contact_email">Email:</label>
+                            <input type="email" name="contact_email" id="contact_email" required>
+                        </div>
+                        <div class="contact-content">
+                            <textarea name="contact_content" id="contact_content" cols="27" rows="11" required></textarea>
+                        </div>
+                        <div class="contact-submit">
+                            <button type="submit">Send</button>
+                            <input type="hidden" name="access_key" value="91563167-38f7-4282-b08b-4b338118288b">
+                            <input type="hidden" name="redirect" value="https://orchidb0y.github.io/personal-website/pages/thanks.html">
+                            <input type="hidden" name="subject" value=`${contact_name} has sent you a message from your personal website`>
+                        </div>
+                    </form>
+
+                </section>
+
             </section>
 
         </div>
