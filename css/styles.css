@@ -240,6 +240,7 @@ figure {
 .page-content #under-construction {
     flex-basis: 100%;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .image {
@@ -254,4 +255,20 @@ figure {
 
 .image p {
     margin: 0;
+}
+
+.aside {
+    max-width: 50%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+}
+
+.aside p {
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    line-height: 1.4;
 }
