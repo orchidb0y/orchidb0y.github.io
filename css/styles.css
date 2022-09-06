@@ -5,7 +5,7 @@
 * {
     box-sizing: border-box;
 }
-html, body, div, img {
+html, body, div, image {
     margin: 0;
     padding: 0;
     border: 0;
@@ -17,7 +17,9 @@ body {
     line-height: 1;
 }
 
-
+figure {
+    display: inline
+}
 
 /* Side menu */
 
@@ -221,3 +223,21 @@ body {
 /* Index main content */
 
 
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-content #under-construction {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.main-content .image {
+    margin: 10px;
+}
+
+.image {
+    width: 560px;
+}
