@@ -1,3 +1,28 @@
+/* Reset styles */
+
+
+
+* {
+    box-sizing: border-box;
+}
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+}
+
+
+
+/* Side menu */
+
+
+
 #sidebar {
     background: rgb(54, 54, 54);
     position: fixed;
@@ -56,6 +81,12 @@
     color:rgb(142, 142, 142);
 }
 
+
+
+/* Top header */
+
+
+
 #main-content {
     position: fixed;
     top: 0;
@@ -83,11 +114,6 @@
 
 #header header {
     color: rgb(183, 183, 183);
-    height: 90px;
-}
-
-.contact-me-header {
-    padding: 10px;
 }
 
 .horizontal {
@@ -95,6 +121,16 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+
+
+/* Contact me form */
+
+
+
+.contact-me-header {
+    padding: 10px;
 }
 
 .contact-me-info {
@@ -173,19 +209,6 @@
     margin: 5px;
 }
 
-#page-content {
-    width: 100%;
-    height: 100%;
-}
-
-#page-content p {
-    box-sizing: content-box;
-    display: inline-block;
-    position: relative;
-    margin: 43%;
-    width: 224px; 
-}
-
 #contact-me {
     padding: 0 !important;
 }
@@ -193,5 +216,8 @@
 #contact-me input:focus {
     background-color: rgb(217, 217, 217);
 }
+
+
+/* Index main content */
 
 
