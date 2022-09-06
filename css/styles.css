@@ -162,13 +162,16 @@ figure {
 }
 
 .contact-me-header {
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .contact-me-info {
-    padding-left: 10px;
     margin: 0;
     font-family: Montserrat, sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .contact-me-info a {
