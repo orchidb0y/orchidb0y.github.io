@@ -240,7 +240,9 @@ figure {
 }
 
 .image img {
-    width: 560px;
+    max-width: 560px;
+    width: 100%;
+    height: auto;
 }
 
 .image p {
