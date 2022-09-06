@@ -5,6 +5,7 @@
 * {
     box-sizing: border-box;
 }
+
 html, body, div, image {
     margin: 0;
     padding: 0;
@@ -13,6 +14,7 @@ html, body, div, image {
     font: inherit;
     vertical-align: baseline;
 }
+
 body {
     line-height: 1;
 }
@@ -20,6 +22,8 @@ body {
 figure {
     display: inline
 }
+
+
 
 /* Side menu */
 
