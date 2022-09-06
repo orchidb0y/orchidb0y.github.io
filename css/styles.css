@@ -157,7 +157,9 @@ figure {
 
 /* Contact me form */
 
-
+.page-content.contact {
+    justify-content: left !important;
+}
 
 .contact-me-header {
     padding: 10px;
@@ -196,6 +198,10 @@ figure {
     padding: 10px;
 }
 
+#contact-form>form {
+    justify-content: left;
+}
+
 .contact-name {
     margin: 5px;
 }
@@ -228,6 +234,7 @@ figure {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 50% 0 0;
 }
 
 .page-content #under-construction {
