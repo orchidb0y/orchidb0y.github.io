@@ -125,7 +125,35 @@ figure {
     overflow: hidden;
 }
 
+.abbr {
+    background-color: rgb(56, 56, 56);
+    height: 70px;
+    position: sticky;
+    top: 80px;
+    left: 200px;
+}
 
+.abbr li {
+    float: left;
+}
+
+.abbr li abbr {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    font-family: Montserrat, sans-serif;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+.abbr abbr:hover {
+    background-color: rgb(72, 72, 72);
+}
+
+.abbr a {
+    text-decoration: none;
+}
 
 /* Contact me form */
 
@@ -163,33 +191,6 @@ figure {
     color: white;
 }
 
-.abbr {
-    background-color: rgb(56, 56, 56);
-    height: 70px;
-}
-
-.abbr li {
-    float: left;
-}
-
-.abbr li abbr {
-    display: block;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    padding: 15px;
-    font-family: Montserrat, sans-serif;
-    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
-}
-
-.abbr abbr:hover {
-    background-color: rgb(72, 72, 72);
-}
-
-.abbr a {
-    text-decoration: none;
-}
-
 #contact-form {
     display: inline-block;
     padding: 10px;
@@ -223,21 +224,25 @@ figure {
 /* Index main content */
 
 
-.main-content {
+.page-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.main-content #under-construction {
+.page-content #under-construction {
     flex-basis: 100%;
     text-align: center;
 }
 
-.main-content .image {
+.image {
     margin: 10px;
 }
 
-.image {
+.image img {
     width: 560px;
+}
+
+.image p {
+    margin: 0;
 }
