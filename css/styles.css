@@ -68,10 +68,11 @@ figure {
     padding-bottom: 7.5px;
     width: auto;
     text-align: center;
+    font-size: calc(min(25vw, 200px) / 7);
 }
 
-.list-item a {
-    font-size: 22px;
+.anchor {
+    font-size: 1em;
 }
 
 .list-item:hover {
@@ -104,7 +105,13 @@ figure {
     padding-top: 10px;
     padding-left: 10px;
     font-family: Montserrat, sans-serif;
-    font-size: 34px;
+    font-size: min(calc(100vw / 30), 48px);
+}
+
+@media only screen and (max-width: 500px) {
+    #header .intro-header {
+        font-size: min(28px, calc(100vw / 15));
+    }
 }
 
 #header header {
@@ -116,6 +123,17 @@ figure {
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+.horizontal li {
+    float: left;
+    padding: 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: min(calc(100vw / 55), 36px);
+}
+
+.horizontal li:hover {
+    color: white;
 }
 
 .abbr {
@@ -176,16 +194,6 @@ figure {
 .contact-me-info a:hover {
     color:rgb(183, 183, 183);
     text-decoration: none;
-}
-
-.horizontal li {
-    float: left;
-    padding: 10px;
-    font-family: Montserrat, sans-serif;
-}
-
-.horizontal li:hover {
-    color: white;
 }
 
 #contact-form {
