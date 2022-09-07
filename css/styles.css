@@ -224,18 +224,26 @@ figure {
 
 /* Index main content */
 
-
-#main-content {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: auto;
-    height: 100%;
-    background: rgb(255, 248, 222);
+.main-content-wrapper {
+    position: static;
+    display: flex;
+    flex-direction: row;
 }
 
+#margin-text{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    visibility: hidden;
+    max-width: 200px;
+    width: 25vw;
+}
+
+#main-content {
+    background: rgb(255, 248, 222);
+    margin: 0;
+    padding: 0;
+}
 
 .page-content {
     display: flex;
