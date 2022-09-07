@@ -34,7 +34,8 @@ figure {
     position: fixed;
     top: 0;
     left: 0;
-    width: 200px;
+    max-width: 200px;
+    width: 25vw;
     height: 100%;
     padding: 20px 0;
     transition: all 0.5s ease;
