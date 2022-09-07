@@ -94,18 +94,6 @@ figure {
 
 
 
-#main-content {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: auto;
-    height: 100%;
-    margin-left: 200px;
-    background: rgb(255, 248, 222);
-}
-
 #header {
     background-color: rgb(78, 78, 78);
 }
@@ -235,6 +223,18 @@ figure {
 
 
 /* Index main content */
+
+
+#main-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    height: 100%;
+    background: rgb(255, 248, 222);
+}
 
 
 .page-content {
