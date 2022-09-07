@@ -17,6 +17,7 @@ html, body, div, image {
 
 body {
     line-height: 1;
+    background-color: rgb(255, 248, 222)
 }
 
 figure {
@@ -34,7 +35,8 @@ figure {
     position: fixed;
     top: 0;
     left: 0;
-    width: 200px;
+    max-width: 200px;
+    width: 25vw;
     height: 100%;
     padding: 20px 0;
     transition: all 0.5s ease;
@@ -67,10 +69,11 @@ figure {
     padding-bottom: 7.5px;
     width: auto;
     text-align: center;
+    font-size: calc(min(25vw, 200px) / 7);
 }
 
-.list-item a {
-    font-size: 22px;
+.anchor {
+    font-size: 1em;
 }
 
 .list-item:hover {
@@ -93,18 +96,6 @@ figure {
 
 
 
-#main-content {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: auto;
-    height: 100%;
-    margin-left: 200px;
-    background: rgb(255, 248, 222);
-}
-
 #header {
     background-color: rgb(78, 78, 78);
 }
@@ -115,7 +106,14 @@ figure {
     padding-top: 10px;
     padding-left: 10px;
     font-family: Montserrat, sans-serif;
-    font-size: 34px;
+    font-size: min(calc(100vw / 30), 48px);
+}
+
+@media only screen and (max-width: 500px) {
+    #header .intro-header {
+        padding-left: 2%;
+        font-size: min(28px, calc(100vw / 15));
+    }
 }
 
 #header header {
@@ -129,19 +127,64 @@ figure {
     overflow: hidden;
 }
 
+.header-description {
+    float: left;
+    padding: 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: min(calc(100vw / 65), 36px);
+}
+
+@media only screen and (max-width: 500px) {
+
+    .header-description {
+        font-size: min(12px, calc(100vw / 15));
+        padding: 2vw;
+    }
+
+    .horizontal.intro {
+        margin: auto;
+    }
+
+}
+
+.horizontal li:hover {
+    color: white;
+}
+
 .abbr {
     background-color: rgb(56, 56, 56);
-    height: 70px;
     position: sticky;
     top: 80px;
     left: 200px;
 }
 
-.abbr li {
+.social-abbrs {
     float: left;
+    padding: 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
 }
 
-.abbr li abbr {
+@media only screen and (max-width: 360px) {
+
+    .social-abbrs {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .social-abbrs {
+        padding: 2%;
+    }
+
+    .header-description {
+        font-size: 11px
+    }
+
+}
+
+.abbr .social-abbrs abbr {
     display: block;
     color: white;
     text-decoration: none;
@@ -190,16 +233,6 @@ figure {
     text-decoration: none;
 }
 
-.horizontal li {
-    float: left;
-    padding: 10px;
-    font-family: Montserrat, sans-serif;
-}
-
-.horizontal li:hover {
-    color: white;
-}
-
 #contact-form {
     display: inline-block;
     padding: 10px;
@@ -236,6 +269,27 @@ figure {
 
 /* Index main content */
 
+.main-content-wrapper {
+    position: static;
+    display: flex;
+    flex-direction: row;
+}
+
+#margin-text{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    visibility: hidden;
+    max-width: 200px;
+    width: 25vw;
+}
+
+#main-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
 
 .page-content {
     display: flex;
@@ -267,10 +321,10 @@ figure {
 }
 
 .aside {
-    max-width: 50%;
+    max-width: 39%;
     width: 100%;
     position: absolute;
-    left: 50%;
+    left: 61%;
 }
 
 .aside p {
