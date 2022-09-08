@@ -218,6 +218,14 @@ figure {
     padding-top: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
+    font-size: min(calc(100vw / 65), 36px);
+}
+
+@media only screen and (max-width: 500px) {
+    .contact-me-info {
+        font-size: min(12px, calc(100vw / 15));
+        padding: 2vw;
+    }
 }
 
 .contact-me-info a {
