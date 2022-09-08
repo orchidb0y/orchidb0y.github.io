@@ -312,10 +312,13 @@ figure {
 .left-gallery {
     display: flex;
     flex-wrap: wrap;
+    align-content: start;
     justify-content: center;
+    gap: 10px;
 }
 
 .image img {
+    max-width: 260px;
     width: 100%;
     height: auto;
 }
