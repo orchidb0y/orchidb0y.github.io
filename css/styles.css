@@ -201,7 +201,11 @@ figure {
     text-decoration: none;
 }
 
+
+
 /* Contact me form */
+
+
 
 .page-content.contact {
     justify-content: left !important;
@@ -266,7 +270,10 @@ figure {
 }
 
 
-/* Index main content */
+
+/* Main content & page content */
+
+
 
 .main-content-wrapper {
     position: static;
@@ -297,11 +304,11 @@ figure {
     height: 100vh;
 }
 
-.page-content {
+/* .page-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-}
+} */
 
 .page-content #under-construction {
     flex-basis: 100%;
@@ -340,4 +347,31 @@ figure {
     font-family: 'Roboto', sans-serif;
     font-size: larger;
     line-height: 1.4;
+}
+
+
+
+/* Projects grid */
+
+
+
+.projects {
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+.project img {
+    max-width: 500px;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.project h2 {
+    padding-left: 10px;
 }
