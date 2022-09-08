@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
     <head>
-        <title>Contact me</title>
+        <title>David Sobral</title>
 
         <meta name="author" content="David Sobral">
         <meta name="description" content="David Sobral is a software engineer with experience in Python, PostreSQL and JavaScript.">
         <meta name="robots" content="index, follow">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta property="og:title" content="David's contact page">
+        <meta property="og:title" content="David's personal website & portfolio">
         <meta property="og:type" content="website">
         <meta property="og:image" content="">
         <meta property="og:url" content="">
-        <meta property="og:description" content="Send David an e-mail using this page's contact form.">
+        <meta property="og:description" content="This is David Sobral's personal website. Here you'll find more about him professionally and personally.">
         <meta property="og:locale" content="en_US">
         <meta property="og:site_name" content="David Sobral">
 
-        <link rel="stylesheet" href="../css/styles.css">    
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,13 +28,13 @@
     </head>
 
     <body>
-
+        
         <div class="main-content-wrapper">
 
             <div class="left-margin">
                 <section id="sidebar">
                     <header>
-                        <a href="/"><img src="../resources/me.png" alt="Logo" id="me"></a>
+                        <a href="/"><img src="/resources/me.png" alt="Logo" id="me"></a>
                         <nav>
                             <menu id="menu">
                                 <li class="list-item"><a href="" class="anchor">About</a></li>
@@ -48,57 +48,36 @@
                     </header>
                 </section>
             </div>
-    
+
             <div id="main-content">
     
                 <section id="header">
-    
                     <header>
-                        <h1 class="intro-header contact-me-header">Contact me</h1>
-                        <p class="contact-me-info">Use the form, check out my links below, or my <a href="https://www.dropbox.com/s/5ebg8ims4399g07/CV%20David%20Sobral%20ENG.pdf?dl=0">resume</a>.</p>
+                        <h1 class="intro-header">Hi, I'm David Sobral</h1>
+                        <ul class="horizontal intro">
+                            <li class="header-description">Front End Developer</li>
+                            <li class="header-description">Sofware Engineer</li>
+                        </ul>
                     </header>
-    
                     <ul class="horizontal abbr">
                         <li class="social-abbrs"><a href="https://github.com/orchidb0y/" target="_blank"><abbr title="GitHub">GH</abbr></a></li>
                         <li class="social-abbrs"><a href="https://instagram.com/orchidb0y" target="_blank"><abbr title="Instagram">IG</abbr></a></li>
                         <li class="social-abbrs"><a href="https://www.linkedin.com/in/dcsobral/" target="_blank"><abbr title="LinkedIn">LI</abbr></a></li>
                         <li class="social-abbrs"><a href="https://dev.to/orchidb0y" target="_blank"><abbr title="Dev">DV</abbr></a></li>
                     </ul>
-    
                 </section>
     
-                <section class="page-content contact">
+                <section class="page-content">
     
-                    <section id="contact-form">
-    
-                        <form action="https://api.web3forms.com/submit" method="post" id="contact-me">
-                            <div class="contact-name">
-                                <label for="contact_name">Name:</label>
-                                <input type="text" id="contact_name" name="contact_name" required>
-                            </div>
-                            <div class="contact-email">
-                                <label for="contact_email">Email:</label>
-                                <input type="email" name="contact_email" id="contact_email" required>
-                            </div>
-                            <div class="contact-content">
-                                <textarea name="contact_content" id="contact_content" cols="27" rows="11" required></textarea>
-                            </div>
-                            <div class="contact-submit">
-                                <button type="submit">Send</button>
-                                <input type="hidden" name="access_key" value="91563167-38f7-4282-b08b-4b338118288b">
-                                <input type="hidden" name="redirect" value="https://orchidb0y.github.io/personal-website/pages/thanks.html">
-                                <input type="hidden" name="subject" value=`${contact_name} has sent you a message from your personal website`>
-                            </div>
-                        </form>
-    
-                    </section>
+                    
     
                 </section>
     
             </div>
-
         </div>
 
+        <script src=""></script>
     </body>
+
 
 </html>
