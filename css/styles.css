@@ -34,9 +34,8 @@ figure {
     background: rgb(54, 54, 54);
     position: fixed;
     top: 0;
-    left: 0;
     max-width: 200px;
-    width: 25vw;
+    width: 20vw;
     height: 100%;
     padding: 20px 0;
     transition: all 0.5s ease;
@@ -273,6 +272,10 @@ figure {
     position: static;
     display: flex;
     flex-direction: row;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.5s ease;
 }
 
 #margin-text{
@@ -285,18 +288,19 @@ figure {
 }
 
 #main-content {
+    position: relative;
+    left: min(200px, 20vw);
     margin: 0;
     padding: 0;
+    max-width: calc(100% - min(200px, 20vw));
     width: 100%;
     height: 100vh;
 }
 
 .page-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    margin: 0 50% 0 0;
 }
 
 .page-content #under-construction {
@@ -305,12 +309,16 @@ figure {
     font-family: 'Roboto', sans-serif;
 }
 
-.image {
-    margin: 10px;
+.left-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content: center;
+    gap: 10px;
 }
 
 .image img {
-    max-width: 560px;
+    max-width: 260px;
     width: 100%;
     height: auto;
 }
@@ -321,10 +329,8 @@ figure {
 }
 
 .aside {
-    max-width: 39%;
+    max-width: 100%;
     width: 100%;
-    position: absolute;
-    left: 61%;
 }
 
 .aside p {
