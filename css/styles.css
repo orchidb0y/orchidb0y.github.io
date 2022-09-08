@@ -386,7 +386,11 @@ figure {
 
 .project img {
     max-width: 500px;
+    max-height: 250px;
+    object-fit: cover;
+    overflow: hidden;
     width: 100%;
+    height: auto;
     align-items: center;
     margin: 1rem auto;
     border: 8px solid rgb(0, 0, 0);
