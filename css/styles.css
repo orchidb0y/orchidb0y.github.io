@@ -151,7 +151,7 @@ figure {
 }
 
 .abbr {
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(54, 54, 54);
     position: sticky;
     top: 80px;
     left: 200px;
@@ -206,6 +206,12 @@ figure {
 /* Contact me form */
 
 
+
+.contact {
+    height: 100%;
+    border-right: 0.5px solid;
+    border-color: rbg(56, 56, 56);
+}
 
 .page-content.contact {
     justify-content: left !important;
@@ -338,6 +344,8 @@ figure {
 .aside {
     max-width: 100%;
     width: 100%;
+    border-right: 0.5px solid;
+    border-color: rbg(56, 56, 56);
 }
 
 .aside p {
@@ -356,22 +364,31 @@ figure {
 
 
 .projects {
+    height: 150%;
     width: 100%;
     padding: 10px;
     gap: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    border-right: 0.5px solid;
+    border-color: rbg(56, 56, 56);
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
 }
 
 .project img {
     max-width: 500px;
     width: 100%;
     align-items: center;
-    padding: 10px;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .project h2 {
-    padding-left: 10px;
+    max-width: 500px;
+    align-items: center;
+    margin: 0 auto;
 }
