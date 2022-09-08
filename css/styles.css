@@ -36,7 +36,7 @@ figure {
     top: 0;
     max-width: 200px;
     width: 20vw;
-    height: 100vmax;
+    height: 100%;
     padding: 20px 0;
     transition: all 0.5s ease;
 }
