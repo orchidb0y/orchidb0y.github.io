@@ -428,6 +428,11 @@ figure {
     margin-left: 10%;
     margin-right: 10%;
     object-fit: contain;
+    transition: all 0.5s ease;
+}
+
+.project #CLI:hover {
+    height: 800px;
 }
 
 .project #return-button {
