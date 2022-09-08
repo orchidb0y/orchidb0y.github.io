@@ -361,18 +361,18 @@ figure {
 
 /* Projects grid */
 
-
+.projects-wrapper {
+    border-right: 0.5px solid;
+    border-color: rbg(56, 56, 56);
+}
 
 .projects {
-    height: 150%;
     width: 100%;
     padding: 10px;
     gap: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    border-right: 0.5px solid;
-    border-color: rbg(56, 56, 56);
 }
 
 .project {
@@ -380,15 +380,34 @@ figure {
     flex-direction: column;
 }
 
+.project:hover {
+    background-color: rgb(255, 248, 222);
+}
+
 .project img {
     max-width: 500px;
     width: 100%;
     align-items: center;
     margin: 1rem auto;
+    border: 8px solid rgb(0, 0, 0);
+    border-radius: 0.5rem;
 }
 
 .project h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 5px 10px;
     max-width: 500px;
+    width: 100%;
     align-items: center;
     margin: 0 auto;
+    border-bottom: 0.2rem solid rgb(0, 0, 0);
+    border-left: 0.2rem solid rgb(0, 0, 0);
+    border-right: 0.2rem solid rgb(0, 0, 0);
+    border-top: 0.2rem solid rgb(0, 0, 0);
+    border-radius: 0.5rem;
+}
+
+.project h2:hover {
+    background-color: rgb(202, 195, 168);
+    font-family: 'Roboto', sans-serif;
 }
