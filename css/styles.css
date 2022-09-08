@@ -304,11 +304,11 @@ figure {
     height: 100vh;
 }
 
-/* .page-content {
+.page-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-} */
+}
 
 .page-content #under-construction {
     flex-basis: 100%;
