@@ -419,6 +419,14 @@ figure {
     font-weight: 300;
 }
 
+.project a:link {
+    color: black;
+}
+
+.project a:visited {
+    color: black;
+}
+
 .project #project-page-header {
     margin-top: 10px;
     margin-bottom: 10px;
