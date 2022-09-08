@@ -298,11 +298,9 @@ figure {
 }
 
 .page-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    margin: 0 50% 0 0;
 }
 
 .page-content #under-construction {
@@ -311,12 +309,13 @@ figure {
     font-family: 'Roboto', sans-serif;
 }
 
-.image {
-    margin: 10px;
+.left-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .image img {
-    max-width: 560px;
     width: 100%;
     height: auto;
 }
@@ -327,10 +326,8 @@ figure {
 }
 
 .aside {
-    max-width: 39%;
+    max-width: 100%;
     width: 100%;
-    position: absolute;
-    left: 61%;
 }
 
 .aside p {
