@@ -419,6 +419,15 @@ figure {
     font-weight: 300;
 }
 
+.deactivated h2 {
+    background-color: rgb(255, 248, 222);
+    font-weight: 300;
+}
+
+.deactivated h2:hover {
+    background-color: rgb(255, 248, 222);
+}
+
 .project a:link {
     color: black;
 }
