@@ -419,6 +419,15 @@ figure {
     font-weight: 300;
 }
 
+.deactivated h2 {
+    background-color: rgb(255, 248, 222);
+    font-weight: 300;
+}
+
+.deactivated h2:hover {
+    background-color: rgb(255, 248, 222);
+}
+
 .project a:link {
     color: black;
 }
@@ -441,6 +450,22 @@ figure {
 
 .project #CLI:hover {
     height: 800px;
+}
+
+.project aside {
+    margin: 1% 10%;
+    font-family: 'Roboto', sans-serif;
+    border-width: 1px;
+    border-bottom-style: double;
+}
+
+.project a:link {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project a:visited {
+    font-weight: 300;
 }
 
 .project #return-button {
