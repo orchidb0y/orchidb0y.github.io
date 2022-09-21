@@ -32,7 +32,6 @@ figure {
 
 #sidebar {
     background: rgb(54, 54, 54);
-    position: fixed;
     top: 0;
     max-width: 200px;
     width: 20vw;
@@ -301,8 +300,6 @@ figure {
 }
 
 #main-content {
-    position: relative;
-    left: min(200px, 20vw);
     margin: 0;
     padding: 0;
     max-width: calc(100% - min(200px, 20vw));
